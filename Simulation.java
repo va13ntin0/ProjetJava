@@ -33,4 +33,14 @@ public class Simulation
             }
         }
     }
+
+    public void rafraichir()
+    {
+        for (Agent x : lA)
+        {
+            x.bouger();
+            x.manger();
+            x.recolter();
+        }
+    }
 }
