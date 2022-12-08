@@ -26,7 +26,7 @@ ont la capacité de se déplacer et de réaliser des actions sur le terrain (pre
 exemple, ou en déposer).
   — votre simulation devra utiliser au moins 2 types de ressources : des ressources dont l’état interne
 ne change pas (leur quantité reste constante et ne peut être modifiée que par un agent) et des
-ressources dont l’état interne peut évoluer sans l’intervention d’un agent (par exemple, par vieillissement (à chaque étape), la quantité peut évoluer au fil du temps, etc., ou la ressource peut se
+ressources dont l’état interne peut évoluer sans l’intervention d’un agent (par exemple, par vieillissement (à chaque étape), la quantité peut évoluer au fil du temps, etc., ou la ressource peut se
 transformer en un autre type (par exemple un bourgeon devient une fleur puis devient un fruit).
 Les classes Terrain et Ressource sont fournies, accompagnées de leur documentation. Leur représentation
 UML client est donnée en Annexe.
@@ -36,7 +36,7 @@ Feuille de route :
   1. Choisir le thème de la simulation, identifier les agents et les ressources, et rédiger une description des
 interactions entre les agents, les ressources et le terrain (ce qui en fait une simulation). Noter qu’il
 existe d’autres classes que les agents et les ressources, et que des interfaces peuvent être utilisées.
-  2. Comprendre comment utiliser les classes Terrain et Ressource en étudiant la documentation fournie et en expérimentant avec la classe TestTerrain aussi fournie. Le terrain est représenté dans
+  2. Comprendre comment utiliser les classes Terrain et Ressource en étudiant la documentation fournie et en expérimentant avec la classe TestTerrain aussi fournie. Le terrain est représenté dans
 cette classe par un tableau à 2 dimensions de Ressource. Une ressource est caractérisée par un type
 et une quantité. Le type de la ressource est mémorisé sous la forme d’une chaîne de caractères (par
 exemple : "Pollen” ou "Miel”) donnée lors de la création de la ressource. La quantité est donnée
@@ -45,7 +45,7 @@ sous la forme d’un entier naturel.
 Un agent possède deux attributs qui correspondent à sa position sur le terrain (numéros de ligne
 et de colonne). Cette classe doit contenir les deux méthodes suivantes (ainsi que tous les attributs
 et méthodes que vous jugerez utile de rajouter pour votre simulation) :
-  — distance(x,y) qui rend la distance (euclidienne) séparant l’objet courant de la case de coordonnées (x,y) ;
+  — distance(x,y) qui rend la distance (euclidienne) séparant l’objet courant de la case de coordonnées (x,y) ;
 LU2IN002 - 2022-2023 – Projet Sorbonne Université – page 2/3
   — seDeplacer(xnew,ynew) qui change la position de l’objet courant sur le terrain et le place en
 (xnew, ynew) si c’est possible (case non occupée par un autre agent) sinon, le déplacement n’a
